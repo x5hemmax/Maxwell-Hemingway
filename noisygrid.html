@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>graphicsProgramming - Coursera</title>
     <script src="libraries/p5.min.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.min.js" type="text/javascript"></script>
     
-    <script src="sketch.js" type="text/javascript"></script>
+    <script src="sketches/noisygrid.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MH</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="title-section">
+            <h2>Title</h2>
+            <!-- Content of the title section goes here -->
+        </section>
 
-    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
-  </head>
-  <body>
-  </body>
+        <section class="content-section">
+            <!-- Rendered content goes here -->
+            <div id="canvasForHTML"></div>
+            <script>
+                // Content rendered by noisygrid.js will be placed here
+            </script>
+        </section>
+
+        <section class="description-section">
+            <p>Description</p>
+            <!-- Description content goes here -->
+        </section>
+    </main>
+</body>
 </html>

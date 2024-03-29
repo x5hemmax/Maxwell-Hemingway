@@ -36,3 +36,15 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+
+canvas {
+    position:relative ;
+    left: 0;
+    top: 0;
+}
+
+.description-section {
+    /* Ensure the description appears below the canvas */
+    margin-top: 20px;
+}

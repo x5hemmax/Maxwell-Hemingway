@@ -1,26 +1,37 @@
 header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Align logo and nav to opposite ends */
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
 }
 
-.logo h1 {
-    font-size: 1.5em;
+.logo {
+    font-size: 3em;
     font-weight: bold;
-    margin: 0;
+}
+
+.logo a {
+    color: black; /* Set text color for the logo */
+    text-decoration: none; /* Remove default underline */
+}
+
+nav {
+    max-width: 1200px;
+    margin-left: auto;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-left: 20px;
 }
 
@@ -29,7 +40,7 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
@@ -37,6 +48,30 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Set maximum width for the content area */
+    margin: 0 auto; /* Center the content horizontally */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 40px; /* Gap between grid items */
+    background-color: white;
+}
+
+
+.hero, .about-me, .projects, .contact {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
 
 canvas {
     position:relative ;

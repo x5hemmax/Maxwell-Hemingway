@@ -1,6 +1,6 @@
 /* Header */
 header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     color: black;
     padding: 20px;
     max-width: 1200px;
@@ -14,6 +14,7 @@ header {
     z-index: 1000; /* Ensure header appears above other content */
     left: 0; /* Align left edge with viewport */
     right: 0; /* Align right edge with viewport */
+    -webkit-backdrop-filter: blur(5px); /* Initial blur effect */
 }
 
 /* Adjust the logo size */
@@ -82,8 +83,10 @@ main.about-me-content {
 
 .about-me-content .left-column {
     padding-top: 80px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 .about-me-content .left-column img {
@@ -95,6 +98,9 @@ main.about-me-content {
 
 .about-me-content .right-column {
     padding-top: 80px;
+    padding-left: 400px;
+    /* margin-left: 300px; */
+    width: 100%;
     display: flex;
     flex-direction: column;
 }

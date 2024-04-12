@@ -75,10 +75,10 @@ main {
 main.about-me-content {
     display: grid;
     grid-template-columns: 1fr 2fr; /* Two columns, left column occupies 1 fraction, right column occupies 2 fractions */
-    gap: 20px; /* Gap between columns */
+    gap: 10px; /* Gap between columns */
     max-width: 1200px; /* Limiting the maximum width */
     margin: 0 auto; /* Center the content horizontally */
-    padding: 20px;
+    padding: 10px;
 }
 
 .about-me-content .left-column {
@@ -86,7 +86,7 @@ main.about-me-content {
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .about-me-content .left-column img {
@@ -98,7 +98,7 @@ main.about-me-content {
 
 .about-me-content .right-column {
     padding-top: 80px;
-    padding-left: 400px;
+    padding-left: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ main.about-me-content {
 
 .hero, .about-me, .projects, .contact {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Footer */

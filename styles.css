@@ -128,3 +128,38 @@ canvas {
     /* Ensure the description appears below the canvas */
     margin-top: 20px;
 }
+
+
+/* For iPad and Phone */
+@media only screen and (max-width: 768px) {
+    main.about-me-content {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px;
+    }
+
+    .about-me-content .left-column,
+    .about-me-content .right-column {
+        max-width: fit-content;
+        width: 100%; /* Set width to 100% to occupy full width */
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: justify;
+        display: inline-block;
+
+    }
+
+    .about-me-content .right-column {
+        padding-top: 20px;
+    }
+
+    .about-me-content .left-column img {
+        /* max-width: 100%; Adjust image width to fit viewport */
+        max-width: 25%; /* Adjust the width of the image as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5%;
+        float: left;
+    }
+    
+}
